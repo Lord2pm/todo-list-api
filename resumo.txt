@@ -1,0 +1,14 @@
+Resumo da videoaula
+
+O que faz cada dependência do projecto?
+
+express =>
+mysql2 => 
+nodemon => 
+dotenv => 
+
+npx eslint --init => Permite fazer algumas configurações do projecto (definição de um guia de estilos) para facilitar o seu desenvolvimento.
+
+mysql.createPoll() => cria uma lista de conexões.
+
+E, para que as informações de conexão com o banco de dados não fiquem expostas, utilizamos variáveis de ambiente para encapsulá-las - Esta informações estarão num arquivo com o nome ".env".
