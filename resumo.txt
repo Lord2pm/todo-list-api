@@ -12,3 +12,19 @@ npx eslint --init => Permite fazer algumas configurações do projecto (definiç
 mysql.createPoll() => cria uma lista de conexões.
 
 E, para que as informações de conexão com o banco de dados não fiquem expostas, utilizamos variáveis de ambiente para encapsulá-las - Esta informações estarão num arquivo com o nome ".env".
+
+Como pegar as variáveis de ambiente definidas no arquivo ".env"?
+
+require("dotenv").config();
+process.env.PORT => Pega a variável PORT do arquivo ".env"
+
+Obs: A camada models é a camada mais baixa, pois lida directamente com o banco de dados
+
+Obs: Para evitar que a lógica das nossas apps sejam desenvolvidas directamente nas rotas, usamos os "controllers"
+
+Extensão para banco de dados => database client
+
+Obs: Para ser mais simples, começar sempre pela camada mais baixa
+Obs: Salvar a data em UTC
+
+Middleware => 
